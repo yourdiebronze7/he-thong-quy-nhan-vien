@@ -14,9 +14,9 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
   .catch(err => console.log(err));
 
 app.get('/', (req, res) => {
-  res.send('API đang chạy!');
+  res.send('API is running!');
 });
 
 app.listen(PORT, () => {
-  console.log(`Server đang chạy tại http://localhost:${PORT}`);
+  console.log(`Server is running at http://localhost:${PORT}`);
 });
